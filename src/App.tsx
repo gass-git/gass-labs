@@ -1,10 +1,13 @@
 import "./App.css";
+import * as C from "./components";
 
 function App() {
   return (
     <>
-      <div className="row navbar">
-        <div className="col brand">logo and brand name</div>
+      <div className="row top-bar">
+        <div className="col brand">
+          <C.Brand />
+        </div>
         <div></div>
         <div className="col menu">menu</div>
       </div>

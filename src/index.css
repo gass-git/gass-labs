@@ -10,6 +10,7 @@
 }
 
 #root {
+  font-family: var(--sans);
   width: 900px;
   max-width: 100%;
   margin: 0 auto;
@@ -45,15 +46,17 @@ body {
   display: flex;
 }
 
-.navbar {
-  height: 50px;
+.top-bar {
+  height: 90px;
   color: var(--text);
   justify-content: space-between;
   border: 1px solid yellow;
 }
 
 .brand {
-  border: 1px solid white;
+  margin: 15px 0 0 20px;
+  height: auto;
+  #border: 1px solid white;
   width: 300px;
 }
 
