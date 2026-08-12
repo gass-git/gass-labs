@@ -1,15 +1,21 @@
-import "./App.css";
 import * as C from "./components";
 
 function App() {
   return (
     <>
-      <div className="row top-bar">
-        <div className="col brand">
+      <div className="top-bar">
+        <div className="brand-wrapper">
           <C.Brand />
         </div>
         <div></div>
-        <div className="col menu">menu</div>
+        <div className="col nav-wrapper">
+          <C.Nav />
+        </div>
+      </div>
+
+      {/* expand when clicking on top right menu icon (small screens) */}
+      <div className="row nav-drawer">
+        <C.NavDrawer />
       </div>
 
       <div className="row top-image">TOP IMAGE</div>

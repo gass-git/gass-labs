@@ -1,0 +1,16 @@
+.row {
+  display: flex;
+  height: 60px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.leftContainer {
+  padding-top: 6px;
+}
+
+.rightContainer {
+  margin-left: 15px;
+}

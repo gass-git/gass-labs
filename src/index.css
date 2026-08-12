@@ -14,7 +14,7 @@
   width: 900px;
   max-width: 100%;
   margin: 0 auto;
-  border-inline: 1px solid var(--border);
+  /* border-inline: 1px solid var(--border); */
   min-height: 100svh;
   display: flex;
   flex-direction: column;
@@ -47,22 +47,28 @@ body {
 }
 
 .top-bar {
+  display: flex;
   height: 90px;
   color: var(--text);
   justify-content: space-between;
-  border: 1px solid yellow;
+  /*border: 1px solid yellow;*/
 }
 
-.brand {
+.brand-wrapper {
   margin: 15px 0 0 20px;
   height: auto;
-  #border: 1px solid white;
   width: 300px;
 }
 
-.menu {
-  border: 1px solid white;
-  width: 500px;
+.nav-wrapper {
+  /*border: 1px solid white;*/
+  padding-bottom: 20px;
+  width: 450px;
+  color: var(--text);
+}
+
+.nav-drawer {
+  height: 0px;
 }
 
 .top-image {
