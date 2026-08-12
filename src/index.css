@@ -47,6 +47,7 @@ body {
 }
 
 .top-bar {
+  margin-top: 20px;
   display: flex;
   height: 90px;
   color: var(--text);
@@ -71,10 +72,13 @@ body {
   height: 0px;
 }
 
-.top-image {
+.banner-wrapper {
+  margin: 5px 0 20px 0;
   color: white;
-  border: 1px solid yellow;
-  height: 200px;
+  /* border: 1px solid yellow; */
+  border-radius: 10px;
+  overflow: hidden;
+  height: 254px;
 }
 
 .content {
