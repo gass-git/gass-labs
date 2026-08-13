@@ -1,8 +1,9 @@
+import { BrowserRouter } from "react-router";
 import * as C from "./components";
 
 function App() {
   return (
-    <>
+    <BrowserRouter basename="">
       <div className="top-bar">
         <div className="brand-wrapper">
           <C.Brand />
@@ -24,7 +25,7 @@ function App() {
 
       <div className="row content">CONTENT</div>
       <div className="row footer">FOOTER</div>
-    </>
+    </BrowserRouter>
   );
 }
 

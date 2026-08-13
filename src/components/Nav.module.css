@@ -9,10 +9,18 @@
 
 .row > div {
   font-size: 20px;
-  width: 80px;
+  width: 100px;
   /* border: 1px solid white; */
   display: flex;
   justify-content: center; /* horizontal */
   align-items: center;
   font-weight: 500;
+}
+
+.row > div:hover {
+  cursor: pointer;
+}
+
+.selected {
+  color: rgb(147, 223, 33);
 }
