@@ -1,0 +1,40 @@
+.gamesWrapper {
+  margin: 20px 0px 10px 0px;
+  flex: 1;
+}
+
+.itemContainer {
+  display: flex;
+  margin-bottom: 10px;
+  flex: 1;
+  padding-bottom: 40px;
+}
+
+.leftContainer {
+  width: 60%;
+}
+
+.leftContainer > * {
+  margin-top: 10px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.rightContainer {
+  color: #dbdee3;
+  flex: 1;
+  margin-left: 50px;
+}
+
+.title {
+  color: #dbdee3;
+  font-size: 25px;
+  font-weight: 500;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 17px;
+}
