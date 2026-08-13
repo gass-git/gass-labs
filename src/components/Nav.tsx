@@ -14,10 +14,11 @@ export default function Nav() {
 
   return (
     <div className={S.row}>
-      {options.map((option) => (
+      {options.map((option, i) => (
         <div
           onClick={() => select(option)}
           className={selected == option ? S.selected : ""}
+          key={i}
         >
           {option}
         </div>

@@ -23,8 +23,12 @@ function App() {
         <C.Banner />
       </div>
 
-      <div className="row content">CONTENT</div>
-      <div className="row footer">FOOTER</div>
+      <div className="row content">
+        <C.Content />
+      </div>
+      <div className="row footer">
+        <C.Footer />
+      </div>
     </BrowserRouter>
   );
 }
