@@ -7,9 +7,7 @@ export default function Brand() {
       <div className={S.leftContainer}>
         <img className={S.logo} src={lab_flask} />
       </div>
-      <div className={S.rightContainer}>
-        <h1>Gass Labs</h1>
-      </div>
+      <div className={S.rightContainer}>GassLabs</div>
     </div>
   );
 }
