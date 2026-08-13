@@ -1,9 +1,8 @@
 import S from "./Footer.module.css";
+import img from "../assets/sample-footer.png"
 
 export default function Footer() {
   return (
-    <>
-      <div>this is the footer component 😇 </div>
-    </>
+    <img src={img} />
   );
 }
