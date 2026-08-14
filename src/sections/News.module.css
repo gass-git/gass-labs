@@ -4,10 +4,11 @@
 }
 
 .itemContainer {
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+  padding: 20px;
   font-size: 16px;
   flex: 1;
-  border-bottom: 2px dashed #0574a6;
+  border-bottom: 2px dashed #3f4857;
   padding-bottom: 40px;
 }
 
