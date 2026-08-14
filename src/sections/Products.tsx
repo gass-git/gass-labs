@@ -1,9 +1,9 @@
-import S from "./Games.module.css";
+import S from "./Products.module.css";
 import MediaLeft from "../content-blocks/MediaLeft";
 import sample from ".././assets/jufofu.png";
 import { Fragment } from "react/jsx-runtime";
 
-export default function Games() {
+export default function Products() {
   const content = (
     <Fragment>
       Correct and fast paced. No pay-to-win. A rush of puzzles full of strategy,

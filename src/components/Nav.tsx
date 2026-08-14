@@ -5,8 +5,8 @@ import { useNavigate } from "react-router";
 export default function Nav() {
   const sections = [
     { key: "news", sectionTitle: "on the burner" },
-    { key: "games", sectionTitle: "it's all about the fun" },
-    { key: "web-apps", sectionTitle: "software for the web" },
+    { key: "products", sectionTitle: "it's all about the fun" },
+    { key: "friends", sectionTitle: "software for the web" },
     { key: "about", sectionTitle: "baked by humans" },
   ];
 

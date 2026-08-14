@@ -1,6 +1,6 @@
-import Games from "./Games";
+import Products from "./Products";
 import News from "./News";
-import WebApps from "./WebApps";
+import Friends from "./Friends";
 import About from "./About";
 
-export { Games, News, WebApps, About };
+export { Products, News, Friends, About };
