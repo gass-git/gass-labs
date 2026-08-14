@@ -1,6 +1,7 @@
 import { BrowserRouter } from "react-router";
 import * as C from "./components";
-import "./App.css"
+import "./App.css";
+import topShadow from "./assets/top-shadow.png";
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
 
         <div className="row banner-wrapper">
           <C.Banner />
+        </div>
+
+        <div className="row section-title-wrapper">
+          <C.SectionTitle />
         </div>
 
         <div className="row content">

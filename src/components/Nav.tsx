@@ -3,24 +3,32 @@ import S from "./Nav.module.css";
 import { useNavigate } from "react-router";
 
 export default function Nav() {
-  const options = ["news", "games", "web-apps", "about"];
-  const [selected, setSelected] = useState(options[0]);
+  const sections = [
+    { key: "news", sectionTitle: "on the burner" },
+    { key: "games", sectionTitle: "it's all about the fun" },
+    { key: "web-apps", sectionTitle: "software for the web" },
+    { key: "about", sectionTitle: "baked by humans" },
+  ];
+
+  const [sectionIndex, setSectionIndex] = useState(0);
   const navigate = useNavigate();
 
-  function select(option: string) {
-    setSelected(option);
-    navigate(option);
+  function select(i: number) {
+    const section = sections[i];
+
+    setSectionIndex(i);
+    navigate(section.key, { state: { sectionTitle: section.sectionTitle } });
   }
 
   return (
     <div className={S.row}>
-      {options.map((option, i) => (
+      {sections.map((section, i) => (
         <div
-          onClick={() => select(option)}
-          className={selected == option ? S.selected : ""}
-          key={i}
+          onClick={() => select(i)}
+          className={sections[sectionIndex] == section ? S.selected : ""}
+          key={section.key}
         >
-          {option}
+          {section.key}
         </div>
       ))}
     </div>

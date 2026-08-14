@@ -1,0 +1,28 @@
+.container {
+  flex: 1;
+  font-family: "Oxanium", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(219, 222, 227, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px 0 10px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  height: 1px;
+  background: rgb(255, 255, 255, 0.2);
+  width: 3%;
+}
+
+.divider-text {
+  margin: 0 20px 0 20px;
+  white-space: nowrap;
+}
