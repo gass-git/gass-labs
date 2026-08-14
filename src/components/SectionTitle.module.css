@@ -1,14 +1,16 @@
 .container {
   flex: 1;
   font-family: "Oxanium", sans-serif;
-  font-style: italic;
   font-weight: 500;
   font-size: 14px;
-  color: rgba(219, 222, 227, 0.8);
+  background-color: rgb(255, 255, 255, 0.2);
+  color: rgba(253, 253, 253, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 10px 0 10px;
+  border-radius: 10px;
+  margin: 30px;
 }
 
 .divider {
@@ -18,7 +20,7 @@
 
 .line {
   height: 1px;
-  background: rgb(255, 255, 255, 0.2);
+  background: rgb(255, 255, 255);
   width: 3%;
 }
 

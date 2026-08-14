@@ -6,9 +6,7 @@ export default function SectionTitle() {
 
   return (
     <div className={S.container}>
-      <span className={S.line}></span>
       <span className={S["divider-text"]}>{location.state?.sectionTitle}</span>
-      <span className={S.line}></span>
     </div>
   );
 }

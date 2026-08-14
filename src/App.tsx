@@ -6,28 +6,24 @@ import topShadow from "./assets/top-shadow.png";
 function App() {
   return (
     <BrowserRouter basename="">
-      <div className="site-wrapper">
-        <div className="top-bar">
-          <div className="brand-wrapper">
-            <C.Brand />
-          </div>
-          <div></div>
-          <div className="col nav-wrapper">
-            <C.Nav />
-          </div>
+      <div className="top-bar">
+        <div className="brand-wrapper">
+          <C.Brand />
         </div>
-
-        {/* expand when clicking on top right menu icon (small screens) */}
-        <div className="row nav-drawer">
-          <C.NavDrawer />
+        <div></div>
+        <div className="col nav-wrapper">
+          <C.Nav />
         </div>
+      </div>
 
+      {/* expand when clicking on top right menu icon (small screens) */}
+      <div className="row nav-drawer">
+        <C.NavDrawer />
+      </div>
+
+      <div className="wrapper">
         <div className="row banner-wrapper">
           <C.Banner />
-        </div>
-
-        <div className="row section-title-wrapper">
-          <C.SectionTitle />
         </div>
 
         <div className="row content">
