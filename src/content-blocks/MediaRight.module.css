@@ -1,0 +1,36 @@
+.itemContainer {
+  display: flex;
+  margin-bottom: 10px;
+  flex: 1;
+  padding-bottom: 40px;
+}
+
+.leftContainer {
+  flex: 1;
+}
+
+.rightContainer {
+  width: 60%;
+  color: #dbdee3;
+  margin-left: 50px;
+}
+
+.rightContainer > * {
+  margin-top: 10px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.title {
+  font-family: "Oxanium", sans-serif;
+  font-weight: 500;
+  color: #dbdee3;
+  font-size: 25px;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 17px;
+}

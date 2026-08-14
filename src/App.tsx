@@ -1,17 +1,17 @@
 import { BrowserRouter } from "react-router";
 import * as C from "./components";
 import "./App.css";
-import topShadow from "./assets/top-shadow.png";
+import closingFrame from "./assets/closing-frame.png";
 
 function App() {
   return (
     <BrowserRouter basename="">
       <div className="top-bar">
-        <div className="brand-wrapper">
+        <div>
           <C.Brand />
         </div>
         <div></div>
-        <div className="col nav-wrapper">
+        <div>
           <C.Nav />
         </div>
       </div>
@@ -29,9 +29,14 @@ function App() {
         <div className="row content">
           <C.Content />
         </div>
-        <div className="row footer">
-          <C.Footer />
+
+        <div className="row">
+          <img src={closingFrame} />
         </div>
+      </div>
+
+      <div className="footer-wrapper">
+        <C.Footer />
       </div>
     </BrowserRouter>
   );

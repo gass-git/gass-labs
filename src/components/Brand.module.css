@@ -8,7 +8,10 @@
 }
 
 .leftContainer {
-  padding-top: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 12px;
 }
 
 .rightContainer {

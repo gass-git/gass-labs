@@ -1,6 +1,10 @@
 import S from "./Footer.module.css";
-import img from "../assets/sample-footer.png";
 
 export default function Footer() {
-  return <img src={img} />;
+  return (
+    <div className={S.container}>
+      <div>© GassLabs 2026</div>
+      <div>Software Crafted by Humans</div>
+    </div>
+  );
 }
