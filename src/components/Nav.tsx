@@ -1,12 +1,11 @@
 import { useState } from "react";
-import S from "./Nav.module.css";
+import S from "./styles/Nav.module.css";
 import { useNavigate } from "react-router";
 
 export default function Nav() {
   const sections = [
     { key: "news", sectionTitle: "on the burner" },
     { key: "products", sectionTitle: "it's all about the fun" },
-    { key: "friends", sectionTitle: "software for the web" },
     { key: "about", sectionTitle: "baked by humans" },
   ];
 
@@ -21,7 +20,7 @@ export default function Nav() {
   }
 
   return (
-    <div className={S.row}>
+    <div className={S.container}>
       {sections.map((section, i) => (
         <div
           onClick={() => select(i)}

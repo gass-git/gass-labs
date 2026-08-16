@@ -1,4 +1,4 @@
-import S from "./MediaLeft.module.css";
+import S from "./styles/MediaLeft.module.css";
 
 type MediaLeftProps = {
   image: string;
@@ -8,14 +8,14 @@ type MediaLeftProps = {
 
 export default function MediaLeft({ image, title, fragment }: MediaLeftProps) {
   return (
-    <div className={S.itemContainer}>
-      <div className={S.leftContainer}>
-        <img src={image} />
+    <div className={S.wrapper}>
+      <div className={S["left-container"]}>
+        <img className={S.image} src={image} />
       </div>
 
-      <div className={S.rightContainer}>
-        <div className={S.title}>{title}</div>
-        <div className={S.text}>{fragment}</div>
+      <div className={S["right-container"]}>
+        <h1>{title}</h1>
+        <p>{fragment}</p>
       </div>
     </div>
   );

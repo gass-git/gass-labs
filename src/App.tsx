@@ -2,6 +2,8 @@ import { BrowserRouter } from "react-router";
 import * as C from "./components";
 import "./App.css";
 import closingFrame from "./assets/closing-frame.png";
+import topShadow from "./assets/top-shadow.png";
+import banner from "./assets/example-banner.png";
 
 function App() {
   return (
@@ -10,32 +12,35 @@ function App() {
         <div>
           <C.Brand />
         </div>
-        <div></div>
         <div>
           <C.Nav />
         </div>
       </div>
 
-      {/* expand when clicking on top right menu icon (small screens) */}
-      <div className="row nav-drawer">
+      {/* TODO: expand when clicking on top right menu icon (small screens) */}
+      <div className="nav-drawer">
         <C.NavDrawer />
       </div>
 
-      <div className="wrapper">
-        <div className="row banner-wrapper">
-          <C.Banner />
+      <div className="page-body">
+        <div className="banner">
+          <img src={banner} />
         </div>
 
-        <div className="row content">
+        <div>
+          <img src={topShadow} />
+        </div>
+
+        <div className="content-slot">
           <C.Content />
         </div>
 
-        <div className="row">
+        <div className="page-body-close">
           <img src={closingFrame} />
         </div>
       </div>
 
-      <div className="footer-wrapper">
+      <div className="footer-slot">
         <C.Footer />
       </div>
     </BrowserRouter>

@@ -1,94 +1,83 @@
 :root {
   --text: #dbdee3;
   --text-h: #07f540;
-  --bg: #373841;
-  --border: #676b81;
+  --bg: #151b23;
 
-  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
-  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+  /* main container */
+  --main-container-bg: #212830;
+  --main-container-border: 1px solid rgb(255, 255, 255, 0.15);
+
+  /* font families */
+  --brand: "Oxanium", sans-serif;
+  --nav: "Oxanium", sans-serif;
+  --heading: "Oxanium", sans-serif;
+  --paragraph: system-ui, "Segoe UI", Roboto, sans-serif;
 }
 
 #root {
-  font-family: var(--sans);
   width: 900px;
-  max-width: 100%;
-  margin: 0 auto;
-  /* border-inline: 1px solid var(--border); */
-  min-height: 100svh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  font-family: var(--paragraph);
+  max-width: 100%;
+  min-height: 100svh;
+  margin: 0 auto;
 }
 
-h1,
-h2 {
+h1 {
   font-family: var(--heading);
   font-weight: 500;
-  font-size: 30px;
+  font-size: 25px;
   color: var(--text);
 }
 
 p {
+  font-family: var(--paragraph);
+  font-size: 16px;
   margin: 0;
 }
 
 body {
-  background-color: #151b23;
-
-  background-size: cover;
+  background-color: var(--bg);
   margin: 0;
-  /*background-color: var(--bg);*/
-}
-
-.row {
-  display: flex;
-}
-
-.col {
-  display: flex;
 }
 
 .top-bar {
-  padding: 0 15px 0 25px;
-  margin: 70px 0 15px 0;
   display: flex;
   height: 70px;
+  padding: 0 15px 0 25px;
+  margin: 70px 0 15px 0;
   color: var(--text);
   justify-content: space-between;
 }
 
-.wrapper {
-  background-color: #212830;
-  border: 1px solid rgb(255, 255, 255, 0.15);
+.page-body {
+  background: var(--main-container-bg);
+  border: var(--main-container-border);
   border-radius: 10px;
   overflow: hidden;
-  color: var(--text);
 }
 
 .nav-drawer {
   height: 0px;
 }
 
-.banner-wrapper {
+.banner {
   color: white;
-  /* border: 1px solid yellow; */
-
   overflow: hidden;
   height: 254px;
 }
 
-.section-title-wrapper {
-  height: 100px;
-}
-
-.content {
+.content-slot {
   margin: 20px 25px 0 25px;
-  color: white;
-  min-height: 900px;
+  min-height: 800px;
 }
 
-.footer-wrapper {
-  display: flex;
+.page-body-close {
+  height: 90px;
+}
+
+.footer-slot {
   height: 120px;
 }

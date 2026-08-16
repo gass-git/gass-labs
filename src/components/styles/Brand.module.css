@@ -1,26 +1,28 @@
-.row {
+.container {
   display: flex;
   height: 70px;
+  text-decoration: none;
+  color: var(--text);
 }
 
 .logo {
   height: 50px;
 }
 
-.leftContainer {
+.left-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding-bottom: 12px;
 }
 
-.rightContainer {
-  font-family: "Oxanium", sans-serif;
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: var(--brand);
   font-weight: 600;
   font-size: 34px;
   margin-left: 15px;
   padding-bottom: 7px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }

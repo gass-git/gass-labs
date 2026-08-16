@@ -1,4 +1,4 @@
-import S from "./Products.module.css";
+import S from "./styles/Products.module.css";
 import MediaLeft from "../content-blocks/MediaLeft";
 import sample from ".././assets/jufofu.png";
 import { Fragment } from "react/jsx-runtime";
@@ -14,7 +14,7 @@ export default function Products() {
   );
 
   return (
-    <div className={S.gamesWrapper}>
+    <div className={S.wrapper}>
       <MediaLeft
         image={sample}
         title="Jufofu - Block Puzzle Rush"

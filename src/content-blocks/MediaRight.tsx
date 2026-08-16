@@ -1,4 +1,4 @@
-import S from "./MediaRight.module.css";
+import S from "./styles/MediaRight.module.css";
 
 type MediaRightProps = {
   image: string;
@@ -12,14 +12,14 @@ export default function MediaRight({
   fragment,
 }: MediaRightProps) {
   return (
-    <div className={S.itemContainer}>
-      <div className={S.leftContainer}>
-        <div className={S.title}>{title}</div>
-        <div className={S.text}>{fragment}</div>
+    <div className={S.wrapper}>
+      <div className={S["left-container"]}>
+        <h1>{title}</h1>
+        <p>{fragment}</p>
       </div>
 
-      <div className={S.rightContainer}>
-        <img src={image} />
+      <div className={S["right-container"]}>
+        <img className={S.image} src={image} />
       </div>
     </div>
   );

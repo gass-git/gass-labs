@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  flex: 1;
+  margin-bottom: 10px;
+  padding-bottom: 40px;
+}
+
+.left-container {
+  width: 60%;
+}
+
+.right-container {
+  flex: 1;
+  color: var(--text);
+  margin-left: 50px;
+}
+
+.image {
+  margin-top: 10px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
