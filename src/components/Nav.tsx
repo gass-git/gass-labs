@@ -1,6 +1,6 @@
 import { useState } from "react";
 import S from "./styles/Nav.module.css";
-import { useNavigate } from "react-router";
+import { useNavigate, useLocation } from "react-router";
 
 export default function Nav() {
   const sections = [
@@ -9,14 +9,17 @@ export default function Nav() {
     { key: "about", sectionTitle: "baked by humans" },
   ];
 
-  const [sectionIndex, setSectionIndex] = useState(0);
   const navigate = useNavigate();
+  const location = useLocation();
 
   function select(i: number) {
     const section = sections[i];
 
-    setSectionIndex(i);
     navigate(section.key, { state: { sectionTitle: section.sectionTitle } });
+  }
+
+  function currentSection() {
+    return location.pathname.slice(1);
   }
 
   return (
@@ -24,7 +27,7 @@ export default function Nav() {
       {sections.map((section, i) => (
         <div
           onClick={() => select(i)}
-          className={sections[sectionIndex] == section ? S.selected : ""}
+          className={currentSection() == section.key ? S.selected : ""}
           key={section.key}
         >
           {section.key}
