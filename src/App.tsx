@@ -2,7 +2,6 @@ import { BrowserRouter } from "react-router";
 import * as C from "./components";
 import "./App.css";
 import closingFrame from "./assets/closing-frame.png";
-import topShadow from "./assets/top-shadow.png";
 import banner from "./assets/example-banner.png";
 
 function App() {
@@ -25,10 +24,6 @@ function App() {
       <div className="page-body">
         <div className="banner">
           <img src={banner} />
-        </div>
-
-        <div>
-          <img src={topShadow} />
         </div>
 
         <div className="content-slot">
