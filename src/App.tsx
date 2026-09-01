@@ -1,8 +1,8 @@
 import { BrowserRouter } from "react-router";
 import * as C from "./components";
 import "./App.css";
-import closingFrame from "./assets/closing-frame.png";
-import banner from "./assets/example-banner.png";
+import topBanner from "./assets/top-banner.png";
+import bottomBanner from "./assets/bottom-banner.png";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
 
       <div className="page-body">
         <div className="banner">
-          <img src={banner} />
+          <img src={topBanner} />
         </div>
 
         <div className="content-slot">
@@ -31,7 +31,7 @@ function App() {
         </div>
 
         <div className="page-body-close">
-          <img src={closingFrame} />
+          <img src={bottomBanner} />
         </div>
       </div>
 
