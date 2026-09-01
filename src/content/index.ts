@@ -1,4 +1,4 @@
 import getNews from "./news";
-import get_products from "./products";
+import getProducts from "./products";
 
-export { getNews, get_products };
+export { getNews, getProducts };
