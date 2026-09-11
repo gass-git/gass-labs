@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r11">
+    <folder id="0">
+        <file id="0" name="flask.png" width="130" height="135" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="big_bubble.png" width="18" height="18" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="flask">
+        <animation id="0" name="bubble" length="5000" interval="100" looping="false">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                </key>
+                <key id="1" time="964">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                </key>
+                <key id="2" time="2532">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="2" z_index="1"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="flask">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="-68" y="97"/>
+                </key>
+                <key id="1" time="2532" spin="0">
+                    <object folder="0" file="0" x="-68" y="97"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="big_bubble">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-13" y="-6"/>
+                </key>
+                <key id="1" time="964" spin="0">
+                    <object folder="0" file="1" x="-8" y="21"/>
+                </key>
+                <key id="2" time="2532" spin="0">
+                    <object folder="0" file="1" x="-3.914272" y="132.062934"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>
