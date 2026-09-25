@@ -5,6 +5,7 @@ export default function Footer() {
     <div className={S.container}>
       <div>© GassLabs 2026</div>
       <div>Software Crafted by Humans</div>
+      <div>Assisted by AI</div>
     </div>
   );
 }

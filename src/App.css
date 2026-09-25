@@ -45,7 +45,7 @@ body {
 
 .top-bar {
   display: flex;
-  margin-top:50px;
+  margin-top: 30px;
   height: 115px;
   padding: 0 15px 0 25px;
   color: var(--text);
