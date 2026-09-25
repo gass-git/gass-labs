@@ -45,9 +45,9 @@ body {
 
 .top-bar {
   display: flex;
-  height: 70px;
+  margin-top:50px;
+  height: 115px;
   padding: 0 15px 0 25px;
-  margin: 70px 0 15px 0;
   color: var(--text);
   justify-content: space-between;
 }

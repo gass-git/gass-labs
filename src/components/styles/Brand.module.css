@@ -1,12 +1,12 @@
 .container {
   display: flex;
-  height: 70px;
+  height: 115px;
   text-decoration: none;
   color: var(--text);
 }
 
 .logo {
-  height: 50px;
+  height: 115px;
 }
 
 .left-container {
